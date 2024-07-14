@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#000000, #000000);
+}
+  
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:350x;
+    padding: 40px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background: rgba(31, 30, 30, 0.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+  
+.login h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+  
+.login .user {
+    position: relative;
+}
+  
+.login .user input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+  
+.login .user label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666666;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+.login .user input:focus ~ label,
+  .login .user input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+  
+.login button{
+    position: relative;
+    padding: 10px;
+    color: #080808;
+    font-size: 15px;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+  
+.login button:hover {
+    background: #000000;
+    color: #fff;
+    border:none;
+    border-radius: 4px;
+    box-shadow: 0 0 15px -2px white;
+}
